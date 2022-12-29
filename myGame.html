@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="myGame.css" />
+    <link rel="icon" href="/images/puzzle.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap"
+      rel="stylesheet" />
+    <title>Puzzle</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="inner-header flex">
+        <img id="imgB" src="/images/brightness-and-contrast (3).png" />
+        <img id="imgD" src="/images/brightness-and-contrast.png" />
+        <h1 id="play" class="play">Play</h1>
+        <h2 id="darkmode" class="dark-mode">Dark Mode</h2>
+        <img id="imgBody" src="/images/puzzle (1).png" />
+        <img id="checkImage" src="/images/check.png" />
+        <h1 id="start" class="start">Start</h1>
+        <h1 id="restart" class="restart">Restart</h1>
+        <div class="time-container">
+          <span id="min">00 </span>: <span id="s"> 00 </span>.
+          <span id="ms"> 000</span>
+        </div>
+        <h1 id="moves">0</h1>
+
+        <h1 id="movetext">Move</h1>
+        <div id="puzzle" class="puzzle">
+          <button class="puzzleElement" id="1">1</button>
+          <button class="puzzleElement" id="2">2</button>
+          <button class="puzzleElement" id="3">3</button>
+          <button class="puzzleElement" id="4">4</button>
+          <button class="puzzleElement" id="5">5</button>
+          <button class="puzzleElement" id="6">6</button>
+          <button class="puzzleElement" id="7">7</button>
+          <button class="puzzleElement" id="8">8</button>
+          <button class="puzzleElement" id="9" style="opacity: 0"></button>
+        </div>
+      </div>
+      <div>
+        <svg
+          class="waves"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+          shape-rendering="auto">
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+          </defs>
+          <g class="parallax">
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="0"
+              fill="rgba(255,255,255,0.7" />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="3"
+              fill="rgba(255,255,255,0.5)" />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="5"
+              fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+          </g>
+        </svg>
+      </div>
+    </div>
+    <script src="myGame.js"></script>
+  </body>
+</html>
